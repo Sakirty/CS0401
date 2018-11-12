@@ -1,0 +1,41 @@
+QUESTION #1)    CIRCLE correct answer OR DELETE all the incorrect ones
+ 
+               int arr[];
+ 
+               b)  allocates just a pointer variable - no data storage allocated.
+ 
+ 
+ 
+ 
+QUESTION #2     CIRCLE correct answer OR DELETE all the incorrect ones  
+ 
+ 
+               int arr[][] = new int[5][7];
+ 
+               c) allocates a 2 D array of ints. 5 rows by 7 cols
+ 
+ 
+QUESTION #3     CIRCLE correct answer OR DELETE all the incorrect ones
+ 
+               c)  crashes in fillArray
+              
+ 
+QUESTION #4     CIRCLE correct answer OR DELETE all the incorrect ones
+ 
+ 
+              int arr1[] = new int[5];
+               int arr2[] = new int[5];
+ 
+               for (int i=0 ; i<5 ;++i)
+                              arr1[i] = i*2;
+               arr2 = arr1;
+ 
+               a) arr2 is a shallow copy (contains same address as arr1)
+ 
+ 
+ 
+QUESTION #9     Explain the difference between DEEP and SHALLOW copy
+ 
+DEEP: copies the data to a separate location
+SHALLOW: only makes a copy of the reference to (address of) the data
+

@@ -1,0 +1,132 @@
+
+Section 1:  TRUE / FALSE  1 pt each
+
+1)  FALSE When you extend a class you are required to write a constructor.
+	
+2)  TRUE  By using the keyword super you can invoke a method that resides in your parent's class
+
+3)  TRUE  Implementing and interface and extending an abstract class both require you to write at least one method.
+
+4)  FALSE  You can extend multiple classes - i.e. your new class can have multiple immediate parents
+
+5)  TRUE   You can implement multiple interfaces.
+
+6)  FALSE  You can declare all your constuctors as private.
+
+7)  FALSE  Polymorhism means wherever a reference (non primitive) type is expected I can use an object of the same type or its parent type.
+
+8)  FALSE  Polymorphism means anywhere any primitive is expected I can use any object type and it will autobox in or out automatically and convert between any type to any type.
+
+9)  FALSE  Autoboxing means anywhere any primitive is expected I can use any object type and it will autobox in or out automatically and convert between any type to any type.
+
+10) TRUE   All classes have Object (capital "O") type as thier ancestor.
+
+11) TRUE   The search operation on a HashMap is faster than a search into an unsorted array. 
+
+12) TRUE   The search operation on a HashMap is faster than a search into an sorted array. 
+
+13) TRUE   The search for an element in a HashSet is faster that a search on a sorted array.
+
+14) TRUE   The Number classes (Integer, Float, Byte etc) wrap up a primitive value inside the object. 
+
+15) TRUE   When you pass a reference variable into a method, you cannot change the actual value inside that ref var because you were just passing a copy of the value.
+ 
+
+Section 2: Free response 2 pts each   
+
+
+1) What is the difference betwen deep and shallow copy?
+	SHALLOW COPIEs THE REFERENCE DEEP COPIEs THe DATA
+
+2) What benefits does inheritence bring to a Java programmer programmer?
+	CODE REUSE Or ANY OTHER CORRECt ANSWER
+
+3) Why should the data members of a class be private instead of public?
+	SO CLIENTS Of THE CLASS CANNOT DIRECTLY MODIFY DATA VIA = OPERATOR
+
+4) Name one difference between a checked and an unchecked exception.
+	CHECKED REQUIRES TRY CATCH OR THROWS CLAUSE 
+	ANY OTHEr CORRECt ANSWER ACEPTED
+
+5) Describe one way that an interface differs from an abstract class.
+	INTERFACE Is IMLIMENTED, ABSTRACT CLASS EXTENDED
+
+6) Name a Java class (class, not interface) that is good for representing members of a group and doing matematical operations such as membership, intersection or union.
+	HASHSET
+
+7) Name one difference between a HashSet and a HashMap.
+	Hash Set does not have values mapped to the keys
+	ANY CORRECt ANSWER ACEPTABLE
+
+8) Name one property/attribute/functionality that HashMap and Hash set do not support.
+	NO ORDERING, NO SORTING, DOES NOT PRESERVE GUARANTEE ORDER OF RETRIEVAL UPON ITERATION
+
+9) Why MUST hashSet and HashMap implement the equals/equality relation property?
+	OTHERWISE TEST FOR MEMBERSHIP COULD NOT BE DONE AND UNIQUENESS IMPOSSIBLE TO ENFORCE
+
+10) Name one property about the keys in a hashmap that must be true.
+	UNIQUENESS i.e NO DUPES
+
+
+SHORT ANSWER QUESTIONS
+
+11)	Suppose you are implementing an interface and you are writing one of the methods that is required by that interface. 
+Further assume you have a line of code in that required method that could throw a checked exception - i.e. you are opening a file.  
+In order to appease the compiler requirement that you do something about checked exceptions - what could you do to make it compile and run correctly?
+
+b)  wrap the code that opens the file in a try/catch block
+
+12) 	If I wanted to store every word in the English language along with its unique primary definition, and then  
+be able to look up a word's definition if given the word to look up. Furthermore I would like be able to print out  
+that dictionary in a sorted list of words with each word's definition on the same line as the word. 
+CIRCLE the optimal container.
+                                                                
+(f) TreeMap	allow storage of pairs and preserves sorting order
+
+13) You are the senior software architect for the new one world govt. (1WG) in 2038. 
+This 1WG has implanted a scanable chip into the body of every human. 
+Every building or area that a human passes into/out-of has a scanner placed and an armed 1WG-Police monitoring the scanner. 
+The scanner reads the chip's unique ID code and looks it up on the NSA's 1WGserver. 
+Once the ID is confirmed as an existing ID, it is used to retrieve a value associated with every ID. 
+That value represents what action (if any) should be taken against person who is being scanned (ignore,  arrest, shoot on sight, obliterate with a drone strike, etc.). 
+There are about 8 billion humans being scanned repeatedly all day long.
+ In order to minimize response time since the 1WG-PD officer may only have seconds to execute the action prescribed by the 1WGserver. 
+
+CIRCLE the optimal container.
+
+(d) HashMap	allow storage of pairs and is the fastest for huge data 
+
+
+14)	Assume you have two classes written as follows. Both are in separate files named Parent.java and Child.java  respectively. 
+	public class Parent
+	{
+		private int x;
+		public Parent( int x )
+		{
+			this.x = x;
+		}
+	}
+	public class Child extends Parent
+	{
+		public int y;
+		public Child( int y )
+		{
+			this.y = y;
+		}
+	}
+	
+	In  a file named Tester.java you have this main method
+	public static void main( String args[] )
+	{
+		Child c = new Child();
+		c.y = 25;
+		System.out.println( c.y );
+	}
+	
+	What will be the outcome of this Tester program?  Circle your answer and fill in the "because:"
+	(You get NO credit for circling the right answer if your explanation is not correct)
+
+	a) It will not compile because:  Child does not have a default C'tor
+	   
+
+

@@ -1,0 +1,30 @@
+	FOR TESTING PURPOSES CREATE A QUICK 'n DIRTY GRID TO TEST WITH SO THAT 
+	YOU DONT HAVE TO READ IN THE GRID FROM A FILE IN ORDER TO GET SOMETHING WORKING
+	THIS APPROACH WILL GERENRATE AND PRINT EVERY POSSIBLE STRING FROM THE GRID
+
+   MAIN()
+   {
+   	String[][] board = { {"a","b"}, {"c,"d"} };  // 2 X 2
+	-or-
+	   String[][] board = { { "a","b","c" }, { "d","e","f" }, { "g","h","i"} };  // 3 X 3
+	-or-
+	   String[][] board = { { "a","b","c","d" }, { "e","f","g","h" }, 
+        	                { "i","j","k", "l"}, { "m","n","o","p" } };  // 4 X 4
+
+	for r=0 to < board.length
+		for c = 0 to board[r].length
+			dfs( r,c,board,"");
+   }
+   private static void  dfs(int r, int c, int[][] board, String word )
+   {	
+	APPEND letter at [r][c] to WORD
+
+	PRINT THE WORD (or add it to an ArrayList to sort then print at end ofprogram)
+
+	IF N (or S or SE or E etc) IS A LOWER CASE LETTER
+		MAKE [r][c] UPPERCASE // mark it as IN USE in this string
+		RECURSE PASSING IN COORDS OF N (or S or SE or E etc ), BOARD AND WORD
+		MAKE [r][c] LOWERCASE // un mark it as NOT in use in this string
+	
+		
+   }

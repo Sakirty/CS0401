@@ -1,0 +1,70 @@
+
+QUESTION #1 Write "CORRECT" on same line after the correct answer in the list below
+-----------
+
+	int arr[];
+
+1.a) allocates space for 50 ints by default - will resize automatically
+1.b) allocates just a pointer variable - no data storage allocated.
+1.c) syntax error - you have to put a number in those []s
+1.d) allocates an array whose length is 0;
+
+QUESTION #2	Write "CORRECT" on same line after the correct answer in the list below
+-----------
+
+	int arr[][] = new int[5][7];
+
+2.a) allocates an array of 5 integers 
+2.b) allocates an array of 5 pointers by 7 pointers 
+2.c) allocates a 2 D array of ints. 5 rows by 7 cols
+2.d) syntax error: needs both []s to have a number in there
+
+
+
+QUESTION #3	Write "CORRECT" on same line after the correct answer in the list below
+-----------
+
+	public static void main( String args[] )
+	{
+		int arr[] = null;
+		dimensionArray( arr );
+		fillArray( arr );
+		printArray( arr );
+	}
+
+	private static void dimensionArray( int a[] )
+	{
+		a = new int[5];
+	}
+	private static void fillArray( int a[] )
+	{
+		for (int i=0 ; i<a.length ; ++i )
+			a[i] = i*2;
+	}
+	private static void printArray( int a[] )
+	{
+		for (int i=0 ; i<a.length ; ++i )
+			System.out.print( a[i] + " " );
+		System.out.println();
+	}
+
+3.a) outputs: 0 2 4 6 8
+3.b) crashes in dimensionArray
+3.c) crashes in fillArray
+3.d) crashes in printArray
+	
+
+QUESTION #4	Write "CORRECT" on same line after the correct answer in the list below
+-----------
+
+ 	int arr1[] = new int[5];
+	int arr2[] = new int[5];
+
+	for (int i=0 ; i<5 ;++i) 
+		arr1[i] = i*2;
+	arr2 = arr1;
+
+4.a) arr2 is a shallow copy (contains same address as arr1)
+4.b) arr2 is a deep copy (element for element) of arr1
+4.c) arr2 contains the number 0 since arr1 is really arr1[0]
+4.d) Exception thrown: you cannot copy one array reference into another reference
